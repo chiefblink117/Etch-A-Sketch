@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px; /* Adjust the width as desired */
+    margin: 0 auto;  /* Center the grid */
+    border: 2px solid black;
+}
+
+.container div {
+    flex: 1 0 auto; /* Each div will take up equal space within a row */
+    height: 30px;    /* Adjust the height for square divs */
+    width: 30px;     /* Must be equal to the height */
+    border: 1px solid #ccc;
+}
