@@ -11,3 +11,7 @@
     width: 30px;     /* Must be equal to the height */
     border: 1px solid #ccc;
 }
+
+.container div:hover {
+    transition: background-color 0.3s ease; /* Smooth fade-in effect */
+}

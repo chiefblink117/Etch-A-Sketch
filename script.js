@@ -13,4 +13,13 @@ const container = document.querySelector('.container');
             row.appendChild(cell);
         }
     }
+
+    const gridDivs = document.querySelectorAll('.container div'); // Select all grid divs
+    gridDivs.forEach(div => {
+        div.addEventListener('mouseover', (e) => {
+            div.style.backgroundColor = 'red'; // Change this to your desired color
+            e.stopPropagation();
+        });
+    });
 });
+
