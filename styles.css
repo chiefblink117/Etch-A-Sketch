@@ -3,15 +3,24 @@
     flex-wrap: wrap;
     width: 520px; /* Adjust the width as desired */
     margin: 0 auto;  /* Center the grid */
+    border: 2px solid black;
+    --grid-size: 16;
 }
 
 .container div {
     flex: 1 0 auto; /* Each div will take up equal space within a row */
-    height: 30px;    /* Adjust the height for square divs */
-    width: 30px;     /* Must be equal to the height */
+    width: calc(520px / var(--grid-size) - 2px);  
+    height: calc(520px / var(--grid-size) - 2px);
     border: 1px solid #ccc;
 }
 
 .container div:hover {
     transition: background-color 0.3s ease; /* Smooth fade-in effect */
+}
+
+#change-grid-size {
+    margin-bottom: 15px; /* Adjust spacing as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
